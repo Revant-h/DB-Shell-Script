@@ -2,6 +2,19 @@
 
 This Bash script provides a comprehensive solution for managing MySQL user access and privileges across multiple databases and hosts. It offers various functionalities to streamline user administration tasks.
 
+# Scripts
+mysql-access.sh: Main script for creating, updating, and managing MySQL user access.
+temp-delete.sh: Script for automatically deleting temporary users based on expiration dates.
+
+# Features
+- Create new MySQL users with specified privileges
+- Update existing user privileges
+- Grant access to specific databases or all databases
+- Migrate users between different hosts
+- Provide temporary access with automatic expiration
+- Delete users from all hosts
+- Support for different environments (Staging, Demo, Sandbox, Production)
+
 ## Features
 
 - Create new MySQL users and grant privileges
@@ -27,6 +40,15 @@ The script will present a menu with the following options:
 5. Provide temporary access on a host
 
 Follow the prompts to perform the desired action.
+
+temp-delete.sh
+
+This script automatically deletes temporary users whose access has expired. It should be run periodically (e.g., daily via a cron job) to maintain security.
+To run the script:
+
+```bash
+./temp-delete.sh
+```
 
 ## Configuration
 
