@@ -4,6 +4,7 @@ This Bash script provides a comprehensive solution for managing MySQL user acces
 
 # Scripts
 mysql-access.sh: Main script for creating, updating, and managing MySQL user access.
+
 temp-delete.sh: Script for automatically deleting temporary users based on expiration dates.
 
 # Features
